@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/ahmed/all_Practice/ros_diploma_koko/myPractice_ws/devel/include/**",
+        "/home/ahmed/all_Practice/ros_diploma_koko/myPractice_ws/src/divider_pkg/include/**",
+        "/home/ahmed/all_Practice/ros_diploma_koko/myPractice_ws/src/laser_obstacle_avoid_pkg/include/**",
+        "/home/ahmed/all_Practice/ros_diploma_koko/myPractice_ws/src/service_pkg/include/**",
+        "/home/ahmed/all_Practice/ros_diploma_koko/myPractice_ws/src/topic_subscriber_pkg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

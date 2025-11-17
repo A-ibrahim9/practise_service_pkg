@@ -1,0 +1,7 @@
+float32 mission_consumption
+float32 battery_level
+
+---
+
+string status
+float32 after_battery_level
