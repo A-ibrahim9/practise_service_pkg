@@ -1,6 +1,6 @@
 # Battery Checking ROS Service
 
-## ⚙️ Overview
+## Overview
 
 This ROS package provides a simple battery checking service.
 The service calculates whether the robot has enough battery to start a mission and returns:
@@ -10,7 +10,7 @@ The service calculates whether the robot has enough battery to start a mission a
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```css
 service_pkg/
@@ -24,7 +24,7 @@ service_pkg/
 ```
 ---
 
-## 🔧 How It Works
+## How It Works
 
 The server receives the robot’s current battery level and the mission power consumption, then calculates the remaining battery.
 Based on the result, it returns one of two status messages:
@@ -34,7 +34,7 @@ Based on the result, it returns one of two status messages:
   
 ---
 
-## 🟦 Service Definition
+## Service Definition
 ```
 check_b.srv
 ```
@@ -47,7 +47,7 @@ float32 after_battery_level
 ```
 ---
 
-## 🟧 Server Node (power_manager_server)
+## Server Node (power_manager_server)
 
 ### ✔️ Responsibilities:
 
@@ -61,7 +61,7 @@ rosrun service_pkg power_manager_server
 ```
 ---
 
-## 🟨 Client Node (req_blevel_client)
+## Client Node (req_blevel_client)
 
 ### ✔️ Responsibilities:
 
@@ -80,7 +80,7 @@ rosrun service_pkg req_blevel_client 70 25
 ```
 ---
 
-## 🟩 Example Output
+## Example Output
 
 ### ✔️ Client:
 ```pgsql
@@ -93,12 +93,13 @@ Battery Level After Mission: 45.00%
 request: battery level before start = 70.00%, and mission consumption = 25.00%
 sending back response: [Start your mission], Battery level after mission: 45.00%
 ```
+---
 
-## 📸 Results
+## Results
 
 <img width="1850" height="1055" alt="serviece_request_battary_practice" src="https://github.com/user-attachments/assets/64d234bd-824b-4140-8a0b-b36bf2ebe248" />
 
----
+
 
 
 
